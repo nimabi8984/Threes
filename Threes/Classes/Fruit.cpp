@@ -38,7 +38,7 @@ bool Fruit::init()
     _sprite->setTouchEnabled(true);
     _sprite->addTouchEventListener([this](Ref* sender,Widget::TouchEventType type){
         if (type == Widget::TouchEventType::ENDED) {
-            
+            CCLOG("Touch me %d-%d", _x, _y);
         }
     });
     return true;

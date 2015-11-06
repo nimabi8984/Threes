@@ -32,6 +32,15 @@ public:
     
     static std::shared_ptr<Fruit> create(FruitType type);
     ImageView* getSprite();
+    
+    void setXY(int x, int y)
+    {
+        _x = x;
+        _y = y;
+    }
+    
+    int px() {return _x;}
+    int py() {return _y;}
 };
 using Fruit_Ptr = std::shared_ptr<Fruit>;
 
