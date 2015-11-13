@@ -10,10 +10,11 @@
 #include "GameView.h"
 #include "Const.h"
 #include "FruitFactory.hpp"
+#include "Drop.hpp"
 
 GameView::GameView()
 {
-    
+
 }
 
 GameView::~GameView()

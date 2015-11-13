@@ -1,5 +1,6 @@
 #include "AppDelegate.h"
 #include "HelloWorldScene.h"
+#include "AppFacade.hpp"
 
 USING_NS_CC;
 
@@ -71,17 +72,16 @@ bool AppDelegate::applicationDidFinishLaunching() {
 //    {        
 //        director->setContentScaleFactor(MIN(smallResolutionSize.height/designResolutionSize.height, smallResolutionSize.width/designResolutionSize.width));
 //    }
-    
-    SpriteFrameCache::getInstance()->addSpriteFramesWithFile("assets/fruit.plist");
 
     register_all_packages();
 
-    // create a scene. it's an autorelease object
-    auto scene = HelloWorld::createScene();
-
-    // run
-    director->runWithScene(scene);
-
+//    // create a scene. it's an autorelease object
+//    auto scene = HelloWorld::createScene();
+//
+//    // run
+//    director->runWithScene(scene);
+    AppFacade::getInstance().sendNotification(AppFacade::START);
+    
     return true;
 }
 
