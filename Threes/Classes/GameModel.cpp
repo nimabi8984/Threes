@@ -7,3 +7,16 @@
 //
 
 #include "GameModel.hpp"
+#include "FruitFactory.hpp"
+
+void GameModel::initRandomFruits()
+{
+    for (int i=0; i<xCount; i++) {
+        for (int j=0; j<yCount; j++) {
+            auto type = (int)(CCRANDOM_0_1()*10);
+            auto fruit = FruitFactory::getInstance()->getFruitByType(FruitType(type%6 + 1));
+            fruit->setXY(i, j);
+            fruits[i][j] = fruit;
+        }
+    }
+}

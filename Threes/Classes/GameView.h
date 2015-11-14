@@ -13,8 +13,15 @@
 #include "cocos2d.h"
 #include "Fruit.hpp"
 #include <vector>
+#include "Common.hpp"
 
 USING_NS_CC;
+
+class GameMediator: public Mediator, public virtual IMediator{
+  
+public:
+    
+};
 
 class GameView: public Layer{
 

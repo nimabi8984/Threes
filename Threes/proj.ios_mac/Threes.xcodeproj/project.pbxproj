@@ -61,18 +61,6 @@
 		52B47A471A53D09C004E4C60 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52B47A461A53D09B004E4C60 /* Security.framework */; };
 		606ECC7D1BF4404E0035E1D6 /* GameControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 606ECC7B1BF4404E0035E1D6 /* GameControl.cpp */; };
 		606ECC811BF440D50035E1D6 /* GameModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 606ECC7F1BF440D50035E1D6 /* GameModel.cpp */; };
-		606ECCD51BF443B90035E1D6 /* Controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 606ECCA71BF443B90035E1D6 /* Controller.cpp */; };
-		606ECCD61BF443B90035E1D6 /* Model.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 606ECCA91BF443B90035E1D6 /* Model.cpp */; };
-		606ECCD71BF443B90035E1D6 /* View.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 606ECCAB1BF443B90035E1D6 /* View.cpp */; };
-		606ECCD81BF443B90035E1D6 /* MacroCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 606ECCBD1BF443B90035E1D6 /* MacroCommand.cpp */; };
-		606ECCD91BF443B90035E1D6 /* SimpleCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 606ECCBF1BF443B90035E1D6 /* SimpleCommand.cpp */; };
-		606ECCDA1BF443B90035E1D6 /* Facade.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 606ECCC21BF443B90035E1D6 /* Facade.cpp */; };
-		606ECCDB1BF443B90035E1D6 /* Mediator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 606ECCC71BF443B90035E1D6 /* Mediator.cpp */; };
-		606ECCDC1BF443B90035E1D6 /* Notification.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 606ECCCA1BF443B90035E1D6 /* Notification.cpp */; };
-		606ECCDD1BF443B90035E1D6 /* Notifier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 606ECCCC1BF443B90035E1D6 /* Notifier.cpp */; };
-		606ECCDE1BF443B90035E1D6 /* Proxy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 606ECCD01BF443B90035E1D6 /* Proxy.cpp */; };
-		606ECCDF1BF443B90035E1D6 /* PureMVC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 606ECCD21BF443B90035E1D6 /* PureMVC.cpp */; };
-		6074F83F1BF582EB0077B82D /* AppFacade.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6074F83D1BF582EB0077B82D /* AppFacade.cpp */; };
 		607542011BEC91B800C41524 /* FruitFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 607541FF1BEC91B800C41524 /* FruitFactory.cpp */; };
 		607542041BEC936500C41524 /* Fruit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 607542021BEC936500C41524 /* Fruit.cpp */; };
 		607542081BEC9C1800C41524 /* GameView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 607542061BEC9C1800C41524 /* GameView.cpp */; };
@@ -177,46 +165,6 @@
 		606ECC7C1BF4404E0035E1D6 /* GameControl.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GameControl.hpp; sourceTree = "<group>"; };
 		606ECC7F1BF440D50035E1D6 /* GameModel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameModel.cpp; sourceTree = "<group>"; };
 		606ECC801BF440D50035E1D6 /* GameModel.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GameModel.hpp; sourceTree = "<group>"; };
-		606ECCA51BF443B90035E1D6 /* Common.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Common.hpp; sourceTree = "<group>"; };
-		606ECCA71BF443B90035E1D6 /* Controller.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Controller.cpp; sourceTree = "<group>"; };
-		606ECCA81BF443B90035E1D6 /* Controller.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Controller.hpp; sourceTree = "<group>"; };
-		606ECCA91BF443B90035E1D6 /* Model.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Model.cpp; sourceTree = "<group>"; };
-		606ECCAA1BF443B90035E1D6 /* Model.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Model.hpp; sourceTree = "<group>"; };
-		606ECCAB1BF443B90035E1D6 /* View.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = View.cpp; sourceTree = "<group>"; };
-		606ECCAC1BF443B90035E1D6 /* View.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = View.hpp; sourceTree = "<group>"; };
-		606ECCAE1BF443B90035E1D6 /* IAggregate.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = IAggregate.hpp; sourceTree = "<group>"; };
-		606ECCAF1BF443B90035E1D6 /* ICommand.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ICommand.hpp; sourceTree = "<group>"; };
-		606ECCB01BF443B90035E1D6 /* IController.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = IController.hpp; sourceTree = "<group>"; };
-		606ECCB11BF443B90035E1D6 /* IFacade.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = IFacade.hpp; sourceTree = "<group>"; };
-		606ECCB21BF443B90035E1D6 /* IIterator.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = IIterator.hpp; sourceTree = "<group>"; };
-		606ECCB31BF443B90035E1D6 /* IMediator.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = IMediator.hpp; sourceTree = "<group>"; };
-		606ECCB41BF443B90035E1D6 /* IModel.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = IModel.hpp; sourceTree = "<group>"; };
-		606ECCB51BF443B90035E1D6 /* INotification.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = INotification.hpp; sourceTree = "<group>"; };
-		606ECCB61BF443B90035E1D6 /* INotifier.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = INotifier.hpp; sourceTree = "<group>"; };
-		606ECCB71BF443B90035E1D6 /* IObserver.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = IObserver.hpp; sourceTree = "<group>"; };
-		606ECCB81BF443B90035E1D6 /* IProxy.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = IProxy.hpp; sourceTree = "<group>"; };
-		606ECCB91BF443B90035E1D6 /* IView.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = IView.hpp; sourceTree = "<group>"; };
-		606ECCBC1BF443B90035E1D6 /* DelegateCommand.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = DelegateCommand.hpp; sourceTree = "<group>"; };
-		606ECCBD1BF443B90035E1D6 /* MacroCommand.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MacroCommand.cpp; sourceTree = "<group>"; };
-		606ECCBE1BF443B90035E1D6 /* MacroCommand.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MacroCommand.hpp; sourceTree = "<group>"; };
-		606ECCBF1BF443B90035E1D6 /* SimpleCommand.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SimpleCommand.cpp; sourceTree = "<group>"; };
-		606ECCC01BF443B90035E1D6 /* SimpleCommand.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SimpleCommand.hpp; sourceTree = "<group>"; };
-		606ECCC21BF443B90035E1D6 /* Facade.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Facade.cpp; sourceTree = "<group>"; };
-		606ECCC31BF443B90035E1D6 /* Facade.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Facade.hpp; sourceTree = "<group>"; };
-		606ECCC51BF443B90035E1D6 /* Iterator.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Iterator.hpp; sourceTree = "<group>"; };
-		606ECCC71BF443B90035E1D6 /* Mediator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Mediator.cpp; sourceTree = "<group>"; };
-		606ECCC81BF443B90035E1D6 /* Mediator.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Mediator.hpp; sourceTree = "<group>"; };
-		606ECCCA1BF443B90035E1D6 /* Notification.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Notification.cpp; sourceTree = "<group>"; };
-		606ECCCB1BF443B90035E1D6 /* Notification.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Notification.hpp; sourceTree = "<group>"; };
-		606ECCCC1BF443B90035E1D6 /* Notifier.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Notifier.cpp; sourceTree = "<group>"; };
-		606ECCCD1BF443B90035E1D6 /* Notifier.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Notifier.hpp; sourceTree = "<group>"; };
-		606ECCCE1BF443B90035E1D6 /* Observer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Observer.hpp; sourceTree = "<group>"; };
-		606ECCD01BF443B90035E1D6 /* Proxy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Proxy.cpp; sourceTree = "<group>"; };
-		606ECCD11BF443B90035E1D6 /* Proxy.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Proxy.hpp; sourceTree = "<group>"; };
-		606ECCD21BF443B90035E1D6 /* PureMVC.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PureMVC.cpp; sourceTree = "<group>"; };
-		606ECCD31BF443B90035E1D6 /* PureMVC.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PureMVC.hpp; sourceTree = "<group>"; };
-		6074F83D1BF582EB0077B82D /* AppFacade.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AppFacade.cpp; sourceTree = "<group>"; };
-		6074F83E1BF582EB0077B82D /* AppFacade.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AppFacade.hpp; sourceTree = "<group>"; };
 		607541FF1BEC91B800C41524 /* FruitFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FruitFactory.cpp; sourceTree = "<group>"; };
 		607542001BEC91B800C41524 /* FruitFactory.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FruitFactory.hpp; sourceTree = "<group>"; };
 		607542021BEC936500C41524 /* Fruit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Fruit.cpp; sourceTree = "<group>"; };
@@ -372,15 +320,12 @@
 		46880B8319C43A87006E1F66 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				606ECCA41BF443B90035E1D6 /* PureMVC */,
 				606ECC7A1BF4402B0035E1D6 /* Controls */,
 				606ECC791BF440050035E1D6 /* Common */,
 				606ECC781BF43FF40035E1D6 /* Views */,
 				606ECC771BF43FDC0035E1D6 /* Models */,
 				46880B8419C43A87006E1F66 /* AppDelegate.cpp */,
 				46880B8519C43A87006E1F66 /* AppDelegate.h */,
-				6074F83D1BF582EB0077B82D /* AppFacade.cpp */,
-				6074F83E1BF582EB0077B82D /* AppFacade.hpp */,
 			);
 			name = Classes;
 			path = ../Classes;
@@ -475,131 +420,6 @@
 				606ECC7C1BF4404E0035E1D6 /* GameControl.hpp */,
 			);
 			name = Controls;
-			sourceTree = "<group>";
-		};
-		606ECCA41BF443B90035E1D6 /* PureMVC */ = {
-			isa = PBXGroup;
-			children = (
-				606ECCA51BF443B90035E1D6 /* Common.hpp */,
-				606ECCA61BF443B90035E1D6 /* Core */,
-				606ECCAD1BF443B90035E1D6 /* Interfaces */,
-				606ECCBA1BF443B90035E1D6 /* Patterns */,
-				606ECCD21BF443B90035E1D6 /* PureMVC.cpp */,
-				606ECCD31BF443B90035E1D6 /* PureMVC.hpp */,
-				606ECCD41BF443B90035E1D6 /* Resource */,
-			);
-			path = PureMVC;
-			sourceTree = "<group>";
-		};
-		606ECCA61BF443B90035E1D6 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				606ECCA71BF443B90035E1D6 /* Controller.cpp */,
-				606ECCA81BF443B90035E1D6 /* Controller.hpp */,
-				606ECCA91BF443B90035E1D6 /* Model.cpp */,
-				606ECCAA1BF443B90035E1D6 /* Model.hpp */,
-				606ECCAB1BF443B90035E1D6 /* View.cpp */,
-				606ECCAC1BF443B90035E1D6 /* View.hpp */,
-			);
-			path = Core;
-			sourceTree = "<group>";
-		};
-		606ECCAD1BF443B90035E1D6 /* Interfaces */ = {
-			isa = PBXGroup;
-			children = (
-				606ECCAE1BF443B90035E1D6 /* IAggregate.hpp */,
-				606ECCAF1BF443B90035E1D6 /* ICommand.hpp */,
-				606ECCB01BF443B90035E1D6 /* IController.hpp */,
-				606ECCB11BF443B90035E1D6 /* IFacade.hpp */,
-				606ECCB21BF443B90035E1D6 /* IIterator.hpp */,
-				606ECCB31BF443B90035E1D6 /* IMediator.hpp */,
-				606ECCB41BF443B90035E1D6 /* IModel.hpp */,
-				606ECCB51BF443B90035E1D6 /* INotification.hpp */,
-				606ECCB61BF443B90035E1D6 /* INotifier.hpp */,
-				606ECCB71BF443B90035E1D6 /* IObserver.hpp */,
-				606ECCB81BF443B90035E1D6 /* IProxy.hpp */,
-				606ECCB91BF443B90035E1D6 /* IView.hpp */,
-			);
-			path = Interfaces;
-			sourceTree = "<group>";
-		};
-		606ECCBA1BF443B90035E1D6 /* Patterns */ = {
-			isa = PBXGroup;
-			children = (
-				606ECCBB1BF443B90035E1D6 /* Command */,
-				606ECCC11BF443B90035E1D6 /* Facade */,
-				606ECCC41BF443B90035E1D6 /* Iterator */,
-				606ECCC61BF443B90035E1D6 /* Mediator */,
-				606ECCC91BF443B90035E1D6 /* Observer */,
-				606ECCCF1BF443B90035E1D6 /* Proxy */,
-			);
-			path = Patterns;
-			sourceTree = "<group>";
-		};
-		606ECCBB1BF443B90035E1D6 /* Command */ = {
-			isa = PBXGroup;
-			children = (
-				606ECCBC1BF443B90035E1D6 /* DelegateCommand.hpp */,
-				606ECCBD1BF443B90035E1D6 /* MacroCommand.cpp */,
-				606ECCBE1BF443B90035E1D6 /* MacroCommand.hpp */,
-				606ECCBF1BF443B90035E1D6 /* SimpleCommand.cpp */,
-				606ECCC01BF443B90035E1D6 /* SimpleCommand.hpp */,
-			);
-			path = Command;
-			sourceTree = "<group>";
-		};
-		606ECCC11BF443B90035E1D6 /* Facade */ = {
-			isa = PBXGroup;
-			children = (
-				606ECCC21BF443B90035E1D6 /* Facade.cpp */,
-				606ECCC31BF443B90035E1D6 /* Facade.hpp */,
-			);
-			path = Facade;
-			sourceTree = "<group>";
-		};
-		606ECCC41BF443B90035E1D6 /* Iterator */ = {
-			isa = PBXGroup;
-			children = (
-				606ECCC51BF443B90035E1D6 /* Iterator.hpp */,
-			);
-			path = Iterator;
-			sourceTree = "<group>";
-		};
-		606ECCC61BF443B90035E1D6 /* Mediator */ = {
-			isa = PBXGroup;
-			children = (
-				606ECCC71BF443B90035E1D6 /* Mediator.cpp */,
-				606ECCC81BF443B90035E1D6 /* Mediator.hpp */,
-			);
-			path = Mediator;
-			sourceTree = "<group>";
-		};
-		606ECCC91BF443B90035E1D6 /* Observer */ = {
-			isa = PBXGroup;
-			children = (
-				606ECCCA1BF443B90035E1D6 /* Notification.cpp */,
-				606ECCCB1BF443B90035E1D6 /* Notification.hpp */,
-				606ECCCC1BF443B90035E1D6 /* Notifier.cpp */,
-				606ECCCD1BF443B90035E1D6 /* Notifier.hpp */,
-				606ECCCE1BF443B90035E1D6 /* Observer.hpp */,
-			);
-			path = Observer;
-			sourceTree = "<group>";
-		};
-		606ECCCF1BF443B90035E1D6 /* Proxy */ = {
-			isa = PBXGroup;
-			children = (
-				606ECCD01BF443B90035E1D6 /* Proxy.cpp */,
-				606ECCD11BF443B90035E1D6 /* Proxy.hpp */,
-			);
-			path = Proxy;
-			sourceTree = "<group>";
-		};
-		606ECCD41BF443B90035E1D6 /* Resource */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -744,25 +564,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				606ECCDE1BF443B90035E1D6 /* Proxy.cpp in Sources */,
-				606ECCD81BF443B90035E1D6 /* MacroCommand.cpp in Sources */,
-				606ECCD71BF443B90035E1D6 /* View.cpp in Sources */,
 				60BDD3221BECB0F700F8E9E3 /* Drop.cpp in Sources */,
-				606ECCD61BF443B90035E1D6 /* Model.cpp in Sources */,
 				607542081BEC9C1800C41524 /* GameView.cpp in Sources */,
-				606ECCDD1BF443B90035E1D6 /* Notifier.cpp in Sources */,
 				607542011BEC91B800C41524 /* FruitFactory.cpp in Sources */,
-				606ECCDF1BF443B90035E1D6 /* PureMVC.cpp in Sources */,
-				606ECCDB1BF443B90035E1D6 /* Mediator.cpp in Sources */,
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
 				46880B8A19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */,
-				606ECCDC1BF443B90035E1D6 /* Notification.cpp in Sources */,
 				606ECC811BF440D50035E1D6 /* GameModel.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
-				606ECCD51BF443B90035E1D6 /* Controller.cpp in Sources */,
-				6074F83F1BF582EB0077B82D /* AppFacade.cpp in Sources */,
-				606ECCD91BF443B90035E1D6 /* SimpleCommand.cpp in Sources */,
-				606ECCDA1BF443B90035E1D6 /* Facade.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
 				607542041BEC936500C41524 /* Fruit.cpp in Sources */,
