@@ -7,3 +7,5 @@
 //
 
 #include "AppFacade.hpp"
+
+const string AppFacade::START = "START";

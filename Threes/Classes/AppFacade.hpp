@@ -12,7 +12,7 @@
 #include <stdio.h>
 #include "Common.hpp"
 #include <iostream>
-#include "GameControl.cpp"
+#include "GameControl.hpp"
 
 using namespace std;
 //TODO virtual public 继承
@@ -58,7 +58,5 @@ protected:
     }
     
 };
-
-const string AppFacade::START = "START";
 
 #endif /* AppFacade_hpp */

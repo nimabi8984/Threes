@@ -72,7 +72,6 @@
 		606ECCDD1BF443B90035E1D6 /* Notifier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 606ECCCC1BF443B90035E1D6 /* Notifier.cpp */; };
 		606ECCDE1BF443B90035E1D6 /* Proxy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 606ECCD01BF443B90035E1D6 /* Proxy.cpp */; };
 		606ECCDF1BF443B90035E1D6 /* PureMVC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 606ECCD21BF443B90035E1D6 /* PureMVC.cpp */; };
-		606ECCE21BF460AA0035E1D6 /* TestMVC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 606ECCE01BF460AA0035E1D6 /* TestMVC.cpp */; };
 		6074F83F1BF582EB0077B82D /* AppFacade.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6074F83D1BF582EB0077B82D /* AppFacade.cpp */; };
 		607542011BEC91B800C41524 /* FruitFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 607541FF1BEC91B800C41524 /* FruitFactory.cpp */; };
 		607542041BEC936500C41524 /* Fruit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 607542021BEC936500C41524 /* Fruit.cpp */; };
@@ -216,8 +215,6 @@
 		606ECCD11BF443B90035E1D6 /* Proxy.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Proxy.hpp; sourceTree = "<group>"; };
 		606ECCD21BF443B90035E1D6 /* PureMVC.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PureMVC.cpp; sourceTree = "<group>"; };
 		606ECCD31BF443B90035E1D6 /* PureMVC.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PureMVC.hpp; sourceTree = "<group>"; };
-		606ECCE01BF460AA0035E1D6 /* TestMVC.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TestMVC.cpp; sourceTree = "<group>"; };
-		606ECCE11BF460AA0035E1D6 /* TestMVC.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = TestMVC.hpp; sourceTree = "<group>"; };
 		6074F83D1BF582EB0077B82D /* AppFacade.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AppFacade.cpp; sourceTree = "<group>"; };
 		6074F83E1BF582EB0077B82D /* AppFacade.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AppFacade.hpp; sourceTree = "<group>"; };
 		607541FF1BEC91B800C41524 /* FruitFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FruitFactory.cpp; sourceTree = "<group>"; };
@@ -382,8 +379,6 @@
 				606ECC771BF43FDC0035E1D6 /* Models */,
 				46880B8419C43A87006E1F66 /* AppDelegate.cpp */,
 				46880B8519C43A87006E1F66 /* AppDelegate.h */,
-				606ECCE01BF460AA0035E1D6 /* TestMVC.cpp */,
-				606ECCE11BF460AA0035E1D6 /* TestMVC.hpp */,
 				6074F83D1BF582EB0077B82D /* AppFacade.cpp */,
 				6074F83E1BF582EB0077B82D /* AppFacade.hpp */,
 			);
@@ -750,7 +745,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				606ECCDE1BF443B90035E1D6 /* Proxy.cpp in Sources */,
-				606ECCE21BF460AA0035E1D6 /* TestMVC.cpp in Sources */,
 				606ECCD81BF443B90035E1D6 /* MacroCommand.cpp in Sources */,
 				606ECCD71BF443B90035E1D6 /* View.cpp in Sources */,
 				60BDD3221BECB0F700F8E9E3 /* Drop.cpp in Sources */,
