@@ -1,4 +1,3 @@
-
 //
 //  GameView.c
 //  Threes
@@ -12,7 +11,8 @@
 #include "FruitFactory.hpp"
 #include "Drop.hpp"
 
-GameView::GameView()
+GameView::GameView(GameModel gm)
+:_gm(nullptr)
 {
 
 }
@@ -20,6 +20,20 @@ GameView::GameView()
 GameView::~GameView()
 {
     
+}
+
+GameView* GameView::create(GameModel gm)
+{
+    auto obj = new(std::nothrow) GameView(gm);
+    if (obj && obj->init()) {
+        obj->autorelease();
+        return obj;
+    }
+    else{
+        delete obj;
+        obj = nullptr;
+        return nullptr;
+    }
 }
 
 bool GameView::init()
@@ -31,10 +45,7 @@ bool GameView::init()
     
     for (int i=0; i<xCount; i++) {
         for (int j=0; j<yCount; j++) {
-            auto type = (int)(CCRANDOM_0_1()*10);
-            auto fruit = FruitFactory::getInstance()->getFruitByType(FruitType(type%6 + 1));
-            fruit->setXY(i, j);
-            fruitVec.push_back(fruit);
+            auto fruit = _gm->getFuit(i, j);
             auto sp = fruit->getSprite();
             this->addChild(sp);
             sp->setPosition(Point(i*Width+Width/2 , j*Height+Height/2));

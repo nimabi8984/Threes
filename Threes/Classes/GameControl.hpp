@@ -11,14 +11,23 @@
 
 #include <stdio.h>
 #include "Singleton.hpp"
-#include "Common.hpp"
+#include "GameModel.hpp"
+#include "GameView.h"
 
-class GameStartCmd: public SimpleCommand {
-
-public:
-    void initResource();
+class  GameController {
     
-    virtual void execute(INotification const& notification) override;
+private:
+    GameModel* _gameModel;
+    GameView* _gameView;
+    
+protected:
+    
+    friend class Singleton<GameController>;
+public:
+    GameController();
+    ~GameController();
+    
+    void gameStart();
 };
 
 #endif /* GameControl_hpp */

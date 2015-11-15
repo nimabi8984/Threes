@@ -13,30 +13,24 @@
 #include "cocos2d.h"
 #include "Fruit.hpp"
 #include <vector>
-#include "Common.hpp"
+#include "GameModel.hpp"
 
 USING_NS_CC;
-
-class GameMediator: public Mediator, public virtual IMediator{
-  
-public:
-    
-};
 
 class GameView: public Layer{
 
 private:
     std::vector<Fruit_Ptr> fruitVec;
+    GameModel* _gm;
     
 public:
-    GameView();
+    GameView(GameModel gm);
     ~GameView();
     
     bool init() override;
     
-    
-    
     CREATE_FUNC(GameView);
+    static GameView* create(GameModel gm);
 };
 
 #endif /* GameView_h */

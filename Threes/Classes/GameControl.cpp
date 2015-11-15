@@ -10,16 +10,24 @@
 #include "HelloWorldScene.h"
 USING_NS_CC;
 
-void GameStartCmd::initResource()
+GameController::GameController()
+:_gameModel(nullptr)
+,_gameView(nullptr)
 {
-    SpriteFrameCache::getInstance()->addSpriteFramesWithFile("assets/fruit.plist");
+    
 }
 
-void GameStartCmd::execute(INotification const& notification)
+GameController::~GameController()
 {
-    CCLOG("Game Start");
-    initResource();
-    
-    Director::getInstance()->runWithScene(HelloWorld::createScene());
+    CC_SAFE_DELETE(_gameModel);
+    CC_SAFE_DELETE(_gameView);
+}
+
+void GameController::gameStart()
+{
+    _gameModel = new GameModel();
+    _gameModel->init();
+    _gameView = new GameView();
+    _gameView->setGameModel(_gameModel);
 }
 

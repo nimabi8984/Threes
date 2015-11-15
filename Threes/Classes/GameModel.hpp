@@ -17,11 +17,18 @@ class GameModel {
     
 private:
     Fruit_Ptr fruits[xCount][yCount];
+    
+    
+private:
+    void initRandomFruits();
+    
 public:
     GameModel() {}
     ~GameModel() {}
     
-    void initRandomFruits();
+    void init();
+    
+    inline Fruit_Ptr getFuit(int x, int y) { return fruits[x][y]; }
 };
 
 #endif /* GameModel_hpp */

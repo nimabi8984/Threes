@@ -20,3 +20,8 @@ void GameModel::initRandomFruits()
         }
     }
 }
+
+void GameModel::init()
+{
+    initRandomFruits();
+}
