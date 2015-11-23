@@ -2,4 +2,117 @@
 <Bucket
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Classes/GameControl.cpp"
+            timestampString = "469961727.037401"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "GameController::~GameController()"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GameControl::~GameControl()"
+                  moduleName = "Threes-mobile"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ct/Desktop/Projects/Threes/Threes/Classes/GameControl.cpp"
+                  timestampString = "469963534.255657"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "15">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GameControl::~GameControl()"
+                  moduleName = "Threes-mobile"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ct/Desktop/Projects/Threes/Threes/Classes/GameControl.cpp"
+                  timestampString = "469963534.256383"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "23">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GameControl::~GameControl()"
+                  moduleName = "Threes-mobile"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ct/Desktop/Projects/Threes/Threes/Classes/GameControl.cpp"
+                  timestampString = "469963534.25671"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "37">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Classes/GameModel.hpp"
+            timestampString = "469962778.662571"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "class GameModel"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GameModel::~GameModel()"
+                  moduleName = "Threes-mobile"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ct/Desktop/Projects/Threes/Threes/Classes/GameModel.hpp"
+                  timestampString = "469963535.088024"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "15">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GameModel::~GameModel()"
+                  moduleName = "Threes-mobile"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ct/Desktop/Projects/Threes/Threes/Classes/GameModel.hpp"
+                  timestampString = "469963535.08848"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "15">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
