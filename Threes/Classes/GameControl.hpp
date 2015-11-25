@@ -17,7 +17,7 @@
 class  GameController {
     
 private:
-    GameModel* _gameModel;
+    shared_ptr<GameModel> _gameModel;
     GameView* _gameView;
     
 protected:

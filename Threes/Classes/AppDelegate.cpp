@@ -1,5 +1,5 @@
 #include "AppDelegate.h"
-#include "HelloWorldScene.h"
+#include "GameControl.hpp"
 
 USING_NS_CC;
 
@@ -76,12 +76,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
 
     SpriteFrameCache::getInstance()->addSpriteFramesWithFile("assets/fruit.plist");
     
-    // create a scene. it's an autorelease object
-    auto scene = HelloWorld::createScene();
-
-    // run
-    director->runWithScene(scene);
-    
+    Singleton<GameController>::getInstance().gameStart();
     return true;
 }
 

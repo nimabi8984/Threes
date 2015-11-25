@@ -19,15 +19,18 @@ GameController::GameController()
 
 GameController::~GameController()
 {
-    CC_SAFE_DELETE(_gameModel);
-    CC_SAFE_DELETE(_gameView);
+    
 }
 
 void GameController::gameStart()
 {
-    _gameModel = new GameModel();
-    _gameModel->init();
-    _gameView = new GameView();
-    _gameView->setGameModel(_gameModel);
+    _gameModel = make_shared<GameModel>("GameModel");
+    _gameView = GameView::create();
+    
+    auto scene = Scene::create();
+    // add layer as a child to scene
+    scene->addChild(_gameView);
+    
+    Director::getInstance()->runWithScene(scene);
 }
 

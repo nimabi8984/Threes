@@ -9,6 +9,11 @@
 #include "GameModel.hpp"
 #include "FruitFactory.hpp"
 
+GameModel::GameModel(const std::string &key):Commponent(key)
+{
+    init();
+}
+
 void GameModel::initRandomFruits()
 {
     for (int i=0; i<xCount; i++) {

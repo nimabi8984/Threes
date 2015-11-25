@@ -10,6 +10,7 @@
 #include "Const.h"
 #include "FruitFactory.hpp"
 #include "Drop.hpp"
+#include "CommponentManager.hpp"
 
 GameView::GameView(GameModel gm)
 :_gm(nullptr)
@@ -43,6 +44,7 @@ bool GameView::init()
     auto size = Director::getInstance()->getWinSize();
     bg->setPosition(size.width/2, size.height/2);
     
+    auto _gm = GetCommponent<GameModel*>("GameModel");
     for (int i=0; i<xCount; i++) {
         for (int j=0; j<yCount; j++) {
             auto fruit = _gm->getFuit(i, j);

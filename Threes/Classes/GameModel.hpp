@@ -12,8 +12,9 @@
 #include <stdio.h>
 #include "Fruit.hpp"
 #include "Const.h"
+#include "Commponent.hpp"
 
-class GameModel {
+class GameModel:public Commponent {
     
 private:
     Fruit_Ptr fruits[xCount][yCount];
@@ -23,7 +24,7 @@ private:
     void initRandomFruits();
     
 public:
-    GameModel() {}
+    GameModel(const std::string &key);
     ~GameModel() {}
     
     void init();

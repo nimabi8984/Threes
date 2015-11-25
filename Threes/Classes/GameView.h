@@ -25,6 +25,7 @@ private:
     
 public:
     GameView(GameModel gm);
+    GameView() {}
     ~GameView();
     
     bool init() override;
