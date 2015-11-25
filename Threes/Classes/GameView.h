@@ -21,17 +21,14 @@ class GameView: public Layer{
 
 private:
     std::vector<Fruit_Ptr> fruitVec;
-    GameModel* _gm;
     
 public:
-    GameView(GameModel gm);
     GameView() {}
     ~GameView();
     
     bool init() override;
     
     CREATE_FUNC(GameView);
-    static GameView* create(GameModel gm);
 };
 
 #endif /* GameView_h */

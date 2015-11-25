@@ -13,12 +13,14 @@
 #include "Fruit.hpp"
 #include "Const.h"
 #include "Commponent.hpp"
+#include "GameLogic.hpp"
 
 class GameModel:public Commponent {
-    
+public:
+    const static std::string EVENT_EXCHANGE;
 private:
     Fruit_Ptr fruits[xCount][yCount];
-    
+    shared_ptr<GameLogic> _logic;
     
 private:
     void initRandomFruits();
@@ -30,6 +32,7 @@ public:
     void init();
     
     inline Fruit_Ptr getFuit(int x, int y) { return fruits[x][y]; }
+    void exchange(int sx,int sy,int dx,int dy);
 };
 
 #endif /* GameModel_hpp */

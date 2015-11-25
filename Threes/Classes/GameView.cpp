@@ -12,29 +12,9 @@
 #include "Drop.hpp"
 #include "CommponentManager.hpp"
 
-GameView::GameView(GameModel gm)
-:_gm(nullptr)
-{
-
-}
-
 GameView::~GameView()
 {
     
-}
-
-GameView* GameView::create(GameModel gm)
-{
-    auto obj = new(std::nothrow) GameView(gm);
-    if (obj && obj->init()) {
-        obj->autorelease();
-        return obj;
-    }
-    else{
-        delete obj;
-        obj = nullptr;
-        return nullptr;
-    }
 }
 
 bool GameView::init()
@@ -44,10 +24,18 @@ bool GameView::init()
     auto size = Director::getInstance()->getWinSize();
     bg->setPosition(size.width/2, size.height/2);
     
-    auto _gm = GetCommponent<GameModel*>("GameModel");
+    GetCommponent<GameModel*>("GameModel")->registerEvent(GameModel::EVENT_EXCHANGE, [](const Msg &msg){
+        for (int i=0; i<xCount; i++) {
+            for (int j=0; j<yCount; j++) {
+                auto fruit = GetCommponent<GameModel*>("GameModel")->getFuit(i, j);
+                auto sp = fruit->getSprite();
+                sp->setPosition(Point(i*Width+Width/2 , j*Height+Height/2));
+            }
+        }
+    });
     for (int i=0; i<xCount; i++) {
         for (int j=0; j<yCount; j++) {
-            auto fruit = _gm->getFuit(i, j);
+            auto fruit = GetCommponent<GameModel*>("GameModel")->getFuit(i, j);
             auto sp = fruit->getSprite();
             this->addChild(sp);
             sp->setPosition(Point(i*Width+Width/2 , j*Height+Height/2));

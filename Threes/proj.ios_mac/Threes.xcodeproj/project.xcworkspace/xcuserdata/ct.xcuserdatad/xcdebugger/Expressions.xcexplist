@@ -3,7 +3,40 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "GameLogic::setSelect(int, int):GameLogic.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "_selectX!=-1&amp;&amp;_selectY!=-1&amp;&amp;(x!=_selectX||y!=_selectY)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Drop::processClashs():Drop.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "GameModel::exchange(int, int, int, int):GameModel.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "CommponentManager::find(std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; const&amp;):CommponentManager.cpp">
+      </ContextState>
+      <ContextState
          contextName = "Fruit::init():Fruit.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "GameView::init()::$_0::operator()(Msg const&amp;) const:GameView.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "_gm">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Drop::init():Drop.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "_map">
+            </PersistentString>
+         </PersistentStrings>
       </ContextState>
       <ContextState
          contextName = "GameView::init():GameView.cpp">

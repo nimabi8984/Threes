@@ -8,6 +8,7 @@
 
 #include "GameModel.hpp"
 #include "FruitFactory.hpp"
+const std::string GameModel::EVENT_EXCHANGE = "EVENT_EXCHANGE";
 
 GameModel::GameModel(const std::string &key):Commponent(key)
 {
@@ -28,5 +29,18 @@ void GameModel::initRandomFruits()
 
 void GameModel::init()
 {
+    _logic = make_shared<GameLogic>();
     initRandomFruits();
+}
+
+void GameModel::exchange(int sx,int sy,int dx,int dy)
+{
+    if (sx!=sy || dx!=dy) {
+        auto tmp = fruits[sx][sy];
+        fruits[sx][sy] = fruits[dx][dy];
+        fruits[dx][dy] = tmp;
+        fruits[sx][sy]->setXY(sx, sy);
+        fruits[dx][dy]->setXY(dx, dy);
+        dispatchEvent(EVENT_EXCHANGE);
+    }
 }

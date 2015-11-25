@@ -23,7 +23,7 @@ public:
     
     virtual void registerEvent(const string &name, eventFunc event) override;
     virtual void removeEvent(const string &name) override;
-    virtual void dispatchEvent(const string &name) override;
+    virtual void dispatchEvent(const string &name, const Msg& msg = Msg()) override;
     inline const string& getKey() const {return _key;}
 protected:
     

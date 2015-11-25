@@ -23,18 +23,15 @@ Commponent::~Commponent()
 
 void Commponent::registerEvent(const string &name, eventFunc event)
 {
-    _events.insert(make_pair(name, event));
+    IObserver::registerEvent(name, event);
 }
 
 void Commponent::removeEvent(const string &name)
 {
-    _events.erase(name);
+    IObserver::removeEvent(name);
 }
 
-void Commponent::dispatchEvent(const string &name)
+void Commponent::dispatchEvent(const string &name, const Msg& msg)
 {
-    auto event = _events.find(name);
-    if (event!=_events.end()) {
-        event->second(Msg());
-    }
+    IObserver::dispatchEvent(name, msg);
 }

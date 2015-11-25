@@ -7,6 +7,8 @@
 //
 
 #include "Fruit.hpp"
+#include "CommponentManager.hpp"
+#include "GameLogic.hpp"
 
 Fruit::Fruit(FruitType type):
 _x(0),
@@ -39,6 +41,7 @@ bool Fruit::init()
     _sprite->addTouchEventListener([this](Ref* sender,Widget::TouchEventType type){
         if (type == Widget::TouchEventType::ENDED) {
             CCLOG("Touch me %d-%d", _x, _y);
+            GetCommponent<GameLogic*>("GameLogic")->setSelect(_x, _y);
         }
     });
     return true;

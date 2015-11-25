@@ -28,7 +28,7 @@ public:
     
     virtual void registerEvent(const string &name, eventFunc event) = 0;
     virtual void removeEvent(const string &name) = 0;
-    virtual void dispatchEvent(const string &name) = 0;
+    virtual void dispatchEvent(const string &name, const Msg& msg) = 0;
 	/* data */
 protected:
 	unordered_map<string, eventFunc> _events;

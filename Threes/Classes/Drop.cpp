@@ -7,6 +7,8 @@
 //
 
 #include "Drop.hpp"
+#include "CommponentManager.hpp"
+#include "GameModel.hpp"
 
 void Drop::threes()
 {
@@ -128,3 +130,27 @@ void Drop::processClashs()
     }
 }
 
+void Drop::init()
+{
+//    _map
+    for (int i=0; i<xCount; i++) {
+        for (int j=0; j<yCount; j++) {
+            auto fruit = GetCommponent<GameModel*>("GameModel")->getFuit(i, j);
+            if (fruit != nullptr) {
+                _map[fruit->px()][fruit->py()] = fruit->ftype();
+            }
+        }
+    }
+    xVec.clear();
+    yVec.clear();
+    clashs.clear();
+    xx[1].clear();
+    xx[2].clear();
+}
+
+void Drop::doEliminate()
+{
+    init();
+    threes();
+    processClashs();
+}

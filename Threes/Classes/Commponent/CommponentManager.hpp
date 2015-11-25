@@ -41,7 +41,7 @@ private:
 };
 
 template <typename T>
-inline const T GetCommponent(const string &name) {
+inline T GetCommponent(const string &name) {
     return CommponentManager::getInstance()->getCommponent<T>(name);
 }
 

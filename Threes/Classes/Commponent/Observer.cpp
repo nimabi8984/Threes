@@ -28,10 +28,10 @@ void IObserver::removeEvent(const string &name)
     _events.erase(name);
 }
 
-void IObserver::dispatchEvent(const string &name)
+void IObserver::dispatchEvent(const string &name, const Msg& msg)
 {
     auto event = _events.find(name);
     if (event!=_events.end()) {
-        event->second(Msg());
+        event->second(msg);
     }
 }
