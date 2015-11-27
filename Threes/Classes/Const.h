@@ -20,7 +20,7 @@ enum class FruitType {
 
 const int Height = 80;
 const int Width = 80;
-const int xCount = 9;
-const int yCount = 9;
+const int xCount = 8;
+const int yCount = 8;
 
 #endif /* Const_h */

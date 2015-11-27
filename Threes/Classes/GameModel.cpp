@@ -44,3 +44,11 @@ void GameModel::exchange(int sx,int sy,int dx,int dy)
         dispatchEvent(EVENT_EXCHANGE);
     }
 }
+
+void GameModel::eliminateFruit(int x, int y)
+{
+    if (fruits[x][y]) {
+        fruits[x][y]->remove();
+        fruits[x][y] = nullptr;
+    }
+}

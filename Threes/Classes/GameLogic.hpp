@@ -13,6 +13,7 @@
 #include <stdio.h>
 #include <iostream>
 #include "Commponent.hpp"
+#include "Drop.hpp"
 
 class GameLogic:public Commponent
 {
@@ -21,7 +22,9 @@ public:
 	~GameLogic();
     
     void setSelect(int x, int y);
-    inline const cocos2d::Point& getSelect() const { return cocos2d::Point(_selectX,_selectY); }
+    inline const cocos2d::Point getSelect() const { return cocos2d::Point(_selectX,_selectY);
+    }
+    void processEliminate(ThreesVec_ptr threeVec);
 	/* data */
 protected:
 	

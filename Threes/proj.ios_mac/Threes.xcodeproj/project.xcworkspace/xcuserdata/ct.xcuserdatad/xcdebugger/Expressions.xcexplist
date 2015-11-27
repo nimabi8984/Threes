@@ -11,22 +11,35 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "Drop::processClashs():Drop.cpp">
-      </ContextState>
-      <ContextState
          contextName = "GameModel::exchange(int, int, int, int):GameModel.cpp">
       </ContextState>
       <ContextState
          contextName = "CommponentManager::find(std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; const&amp;):CommponentManager.cpp">
       </ContextState>
       <ContextState
-         contextName = "Fruit::init():Fruit.cpp">
-      </ContextState>
-      <ContextState
          contextName = "GameView::init()::$_0::operator()(Msg const&amp;) const:GameView.cpp">
          <PersistentStrings>
             <PersistentString
                value = "_gm">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Fruit::init():Fruit.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "Drop::processClashs():Drop.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "clashs.length">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Drop::doEliminate():Drop.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "hMap">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -48,6 +61,9 @@
                value = "j*Width + Width/2">
             </PersistentString>
          </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Drop::threes():Drop.cpp">
       </ContextState>
    </ContextStates>
 </VariablesViewState>

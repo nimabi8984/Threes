@@ -63,13 +63,13 @@
 		605A7D391C0594CE00C1438F /* CommponentManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 605A7D341C0594CE00C1438F /* CommponentManager.cpp */; };
 		605A7D3A1C0594CE00C1438F /* Observer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 605A7D361C0594CE00C1438F /* Observer.cpp */; };
 		605A7D3D1C059C4B00C1438F /* GameLogic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 605A7D3B1C059C4A00C1438F /* GameLogic.cpp */; };
+		605A7D3F1C06D69C00C1438F /* Drop.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60BDD3201BECB0F700F8E9E3 /* Drop.cpp */; };
 		606ECC7D1BF4404E0035E1D6 /* GameControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 606ECC7B1BF4404E0035E1D6 /* GameControl.cpp */; };
 		606ECC811BF440D50035E1D6 /* GameModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 606ECC7F1BF440D50035E1D6 /* GameModel.cpp */; };
 		607542011BEC91B800C41524 /* FruitFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 607541FF1BEC91B800C41524 /* FruitFactory.cpp */; };
 		607542041BEC936500C41524 /* Fruit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 607542021BEC936500C41524 /* Fruit.cpp */; };
 		607542081BEC9C1800C41524 /* GameView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 607542061BEC9C1800C41524 /* GameView.cpp */; };
 		60BDD31F1BECAB9200F8E9E3 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 60BDD31E1BECAB9200F8E9E3 /* assets */; };
-		60BDD3221BECB0F700F8E9E3 /* Drop.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60BDD3201BECB0F700F8E9E3 /* Drop.cpp */; };
 		8262943E1AAF051F00CB7CF7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8262943D1AAF051F00CB7CF7 /* Security.framework */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
@@ -593,7 +593,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				605A7D391C0594CE00C1438F /* CommponentManager.cpp in Sources */,
-				60BDD3221BECB0F700F8E9E3 /* Drop.cpp in Sources */,
 				607542081BEC9C1800C41524 /* GameView.cpp in Sources */,
 				607542011BEC91B800C41524 /* FruitFactory.cpp in Sources */,
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
@@ -602,6 +601,7 @@
 				606ECC811BF440D50035E1D6 /* GameModel.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
+				605A7D3F1C06D69C00C1438F /* Drop.cpp in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
 				607542041BEC936500C41524 /* Fruit.cpp in Sources */,
 				606ECC7D1BF4404E0035E1D6 /* GameControl.cpp in Sources */,

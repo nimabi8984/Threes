@@ -42,6 +42,7 @@ public:
     inline int px() {return _x;}
     inline int py() {return _y;}
     inline int ftype() {return static_cast<int>(_type);}
+    void remove();
 };
 using Fruit_Ptr = std::shared_ptr<Fruit>;
 

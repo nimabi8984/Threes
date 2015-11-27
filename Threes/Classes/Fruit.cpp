@@ -37,6 +37,12 @@ std::shared_ptr<Fruit> Fruit::create(FruitType type)
 bool Fruit::init()
 {
     _sprite = ImageView::create(StringUtils::format("fruit_type_%d.png", (int)_type), Widget::TextureResType::PLIST);
+    auto label = Label::create();
+    label->setString(StringUtils::format("%d", (int)_type));
+    label->setSystemFontSize(24);
+    label->setPosition(Point(Width/2, Height/2));
+    
+    _sprite->addChild(label);
     _sprite->setTouchEnabled(true);
     _sprite->addTouchEventListener([this](Ref* sender,Widget::TouchEventType type){
         if (type == Widget::TouchEventType::ENDED) {
@@ -50,4 +56,9 @@ bool Fruit::init()
 ImageView* Fruit::getSprite()
 {
     return _sprite;
+}
+
+void Fruit::remove()
+{
+    _sprite->removeFromParent();
 }
